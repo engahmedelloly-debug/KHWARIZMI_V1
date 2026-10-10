@@ -1,0 +1,24 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="خوارزمي — مجتمع طلاب علوم الحاسب والبيانات، تخصصات ومسارات ومقالات وكويزات."><title>خوارزمي — مجتمع علوم الحاسب والبيانات</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/app.css"><link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml"></head><body>
+<div id="siteHeader"></div>
+<main>
+<section class="hero"><div class="wrap hero-grid"><div class="hero-copy">
+  <div class="eyebrow" data-i18n="home.eyebrow">مجتمع علوم الحاسب والبيانات</div>
+  <h1 data-i18n="home.title">من هنا يبدأ فهمك الحقيقي للكمبيوتر والبيانات</h1>
+  <p data-i18n="home.desc">خوارزمي مجتمع للطلاب يساعدك تفهم المجال، تختار تخصصك، تبني مسارك، وتتعلم خطوة بخطوة من غير تشتت.</p>
+  <div class="hero-actions"><a class="btn btn-primary" href="register.html" data-i18n="home.start">ابدأ رحلتك</a><a class="btn btn-ghost" href="paths.html" data-i18n="home.explore">استكشف التخصصات</a></div>
+</div><div class="graph-card" aria-hidden="true"><svg viewBox="0 0 500 420"><g stroke="var(--border)" stroke-width="2"><line x1="90" y1="90" x2="250" y2="170"/><line x1="250" y1="170" x2="405" y2="105"/><line x1="250" y1="170" x2="205" y2="320"/><line x1="205" y1="320" x2="380" y2="350"/></g><g stroke="var(--accent)" stroke-width="3"><line x1="90" y1="90" x2="250" y2="170"/><line x1="250" y1="170" x2="205" y2="320"/></g><circle class="node" cx="90" cy="90" r="16" fill="var(--accent-2)"/><circle class="node" cx="250" cy="170" r="23" fill="var(--accent)"/><circle class="node" cx="405" cy="105" r="14" fill="var(--muted)"/><circle class="node" cx="205" cy="320" r="17" fill="var(--accent-2)"/><circle class="node" cx="380" cy="350" r="14" fill="var(--accent)"/></svg></div></div></section>
+
+<section class="section"><div class="wrap"><div class="section-head"><div><h2 data-i18n="home.why">ليه خوارزمي؟</h2><p data-i18n="home.whyText">أدوات ومحتوى مترتبين عشان تختصر الطريق بدل ما تضيع بين عشرات المصادر.</p></div></div><div class="grid feature-grid">
+<article class="card card-hover"><div class="icon-box">⌘</div><h3 data-i18n="home.platform1">مسارات واضحة</h3><p data-i18n="home.platform1Text">Roadmaps مترتبة من الأساسيات لحد المستوى المتقدم.</p></article>
+<article class="card card-hover"><div class="icon-box">✦</div><h3 data-i18n="home.platform2">تعلم تفاعلي</h3><p data-i18n="home.platform2Text">كويزات وتحديات ونظام XP يخلي التعلم فيه حركة.</p></article>
+<article class="card card-hover"><div class="icon-box">▦</div><h3 data-i18n="home.platform3">محتوى مستمر</h3><p data-i18n="home.platform3Text">مقالات ومصادر جديدة تتضاف واحدة واحدة مع نمو المنصة.</p></article>
+</div></div></section>
+
+<section class="section"><div class="wrap"><div class="section-head"><div><h2 data-i18n="home.paths">تخصصات ومسارات</h2><p data-i18n="home.pathsText">اختار المجال اللي حابب تبدأ منه، وخوارزمي يرتبلك الطريق.</p></div><a class="btn btn-ghost" href="paths.html" data-i18n="home.all">عرض الكل</a></div><div class="grid" id="homePaths"></div></div></section>
+
+<section class="section"><div class="wrap"><div class="section-head"><div><h2 data-i18n="home.articles">مقالات تقنية</h2><p data-i18n="home.articlesText">محتوى بسيط وعملي يساعدك تفهم الفكرة قبل ما تدخل في التفاصيل.</p></div><a class="btn btn-ghost" href="articles.html" data-i18n="home.all">عرض الكل</a></div><div class="article-grid" id="homeArticles"></div></div></section>
+
+<section class="section home-end"><div class="wrap home-end-inner"><div><h2 data-i18n="home.footerTitle">خوارزمي — خطوة أوضح في طريقك</h2><p data-i18n="home.footerText">مش لازم تعرف هتتخصص في إيه من أول يوم. ابدأ، جرّب، واتعلم.</p></div><a class="btn btn-primary" href="register.html" data-i18n="home.start">ابدأ رحلتك</a></div></section>
+</main>
+<div id="siteFooter"></div><script src="js/layout.js"></script><script src="js/app.js"></script><script src="js/data.js"></script><script src="js/content.js"></script><script src="js/mock.js"></script><script src="js/api.js"></script><script src="js/render.js"></script><script>const homePaths=document.getElementById('homePaths'),homeArticles=document.getElementById('homeArticles');function drawHome(){KW.view(homePaths,()=>KW.api.getPaths(),l=>KW_RENDER.pathCards(l.slice(0,6)));KW.view(homeArticles,()=>KW.api.getArticles(),l=>KW_RENDER.articleCards(l.slice(0,6)))}
+drawHome();window.addEventListener('kw:language',drawHome);</script></body></html>

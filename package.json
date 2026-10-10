@@ -1,0 +1,9 @@
+{
+  "name": "kharazmi-v1-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kharazmi V1 backend — zero external runtime dependencies",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "dev": "node --watch server.js" },
+  "engines": { "node": ">=22" }
+}
